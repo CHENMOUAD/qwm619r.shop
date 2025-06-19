@@ -1,35 +1,320 @@
-
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>画像クリックでリンク</title>
+    <title>農業と株式投資 - 緑の黄金への投資</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5D5CDE',
+                        green: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d'
+                        }
+                    },
+                    fontFamily: {
+                        'jp': ['Noto Sans JP', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-            background-color: #f9f9f9;
+            font-family: 'Noto Sans JP', sans-serif;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            cursor: pointer;
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #22c55e 0%, #16a34a 50%, #15803d 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #22c55e, #5D5CDE);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .dark .bg-white {
+            background-color: #181818;
+        }
+        
+        .dark .bg-gray-50 {
+            background-color: #1f1f1f;
+        }
+        
+        .dark .bg-gray-100 {
+            background-color: #2a2a2a;
+        }
+        
+        .dark .text-gray-900 {
+            color: #ffffff;
+        }
+        
+        .dark .text-gray-800 {
+            color: #e5e5e5;
+        }
+        
+        .dark .text-gray-600 {
+            color: #a1a1aa;
+        }
+        
+        .dark .border-gray-200 {
+            border-color: #374151;
         }
     </style>
 </head>
-<body>
-    <h1>クリックして画像を表示</h1>
-    <a href="https://www.google.com" target="_blank">
-        <img src="img/1.jpg" alt="画像説明">
-    </a><br>
-     <a href="https://www.google.com" target="_blank">
-        <img src="img/3.jpg" alt="画像説明">
-    </a><br>
-     <a href="https://www.google.com" target="_blank">
-        <img src="img/9.jpg" alt="画像説明">
-    </a>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                農業と株式の交差点
+                <span class="block text-2xl md:text-4xl font-light mt-2">
+                    未来への緑の黄金投資
+                </span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-4xl mx-auto leading-relaxed">
+                今日の急速に変化する経済環境において、農業は私たちの生存の基盤であるだけでなく、投資家が注目するホットスポットでもあります。世界人口の継続的な増加と都市化の進展に伴い、農業への需要は日々高まり、大きな可能性を秘めた投資分野となっています。
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mt-10">
+                <button class="bg-white text-green-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors">
+                    投資を始める
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-green-600 transition-colors">
+                    詳細を見る
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <!-- Section 1: 農業の基础作用 -->
+            <div class="mb-16">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gradient">
+                            1. 農業の基礎的役割
+                        </h2>
+                        <p class="text-lg md:text-xl leading-relaxed text-gray-600 dark:text-gray-300 mb-6">
+                            農業は人類社会の根幹であり、私たちの日々の食物を提供するだけでなく、経済において重要な役割を果たしています。国の基幹産業として、農業の健全な発展は国民経済の安定と成長に直接影響を与えます。
+                        </p>
+                        <p class="text-lg leading-relaxed text-gray-600 dark:text-gray-300">
+                            食料生産から農産物加工まで、農業チェーンのあらゆる段階が投資機会に満ちています。
+                        </p>
+                    </div>
+                    <div class="bg-green-50 dark:bg-gray-800 p-8 rounded-2xl">
+                        <div class="text-6xl mb-4">🌱</div>
+                        <h3 class="text-2xl font-semibold mb-4">農業の価値</h3>
+                        <ul class="space-y-3 text-gray-600 dark:text-gray-300">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                                食料安全保障の確保
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                                雇用創出と地域経済の活性化
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                                環境保全への貢献
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2: 投資理由 -->
+            <div class="mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-gradient">
+                    2. 農業投資の理由
+                </h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="card-hover bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl">
+                        <div class="text-5xl mb-4">📈</div>
+                        <h3 class="text-xl font-semibold mb-4">市場需要</h3>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            人口増加と生活水準の向上により、食品需要は継続的に上昇。農業企業に広大な市場空間を提供しています。
+                        </p>
+                    </div>
+                    <div class="card-hover bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl">
+                        <div class="text-5xl mb-4">🔬</div>
+                        <h3 class="text-xl font-semibold mb-4">技術革新</h3>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            精密農業や生物技術などの現代農業科学技術の発展により、生産効率と製品品質が向上し、新たな投資機会を創出。
+                        </p>
+                    </div>
+                    <div class="card-hover bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl">
+                        <div class="text-5xl mb-4">🌍</div>
+                        <h3 class="text-xl font-semibold mb-4">持続可能な発展</h3>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            環境保護と持続可能な発展理念の台頭により、グリーン農業と有機農業が投資の新たなトレンドとなっています。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: 株式市場の機会 -->
+            <div class="mb-16">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="bg-primary/10 dark:bg-primary/20 p-8 rounded-2xl order-2 md:order-1">
+                        <div class="text-6xl mb-4">📊</div>
+                        <h3 class="text-2xl font-semibold mb-4">投資セクター</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="w-4 h-4 bg-green-500 rounded mr-3"></div>
+                                <span>農業機械製造業</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-4 h-4 bg-blue-500 rounded mr-3"></div>
+                                <span>農産物加工企業</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-4 h-4 bg-purple-500 rounded mr-3"></div>
+                                <span>バイオテクノロジー企業</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-4 h-4 bg-orange-500 rounded mr-3"></div>
+                                <span>農業科学技術企業</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gradient">
+                            3. 株式市場の機会
+                        </h2>
+                        <p class="text-lg md:text-xl leading-relaxed text-gray-600 dark:text-gray-300 mb-6">
+                            農業関連株式は、農業機械メーカー、農産物加工企業、バイオテクノロジー企業など、投資家から次第に注目を集めています。
+                        </p>
+                        <p class="text-lg leading-relaxed text-gray-600 dark:text-gray-300">
+                            これらの企業は従来の農業分野で地位を確立するだけでなく、新興の農業科学技術分野においても強力な成長ポテンシャルを示しています。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 4: 投資戦略 -->
+            <div class="mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-gradient">
+                    4. 投資戦略
+                </h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-8 rounded-2xl shadow-lg">
+                        <div class="text-4xl mb-4">🎯</div>
+                        <h3 class="text-xl font-semibold mb-4">多様化投資</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            農業ETF（上場投資信託）の購入により、幅広い農業市場へのエクスポージャーを獲得し、単一株式のリスクを軽減できます。
+                        </p>
+                        <div class="bg-green-100 dark:bg-green-900/30 p-3 rounded-lg">
+                            <span class="text-sm font-medium text-green-800 dark:text-green-200">リスク分散効果</span>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-8 rounded-2xl shadow-lg">
+                        <div class="text-4xl mb-4">⏳</div>
+                        <h3 class="text-xl font-semibold mb-4">長期保有</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            農業は周期的な業界です。長期的な成長ポテンシャルを持つ企業への投資により、市場変動の中で安定したリターンを得られます。
+                        </p>
+                        <div class="bg-blue-100 dark:bg-blue-900/30 p-3 rounded-lg">
+                            <span class="text-sm font-medium text-blue-800 dark:text-blue-200">安定収益</span>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-8 rounded-2xl shadow-lg">
+                        <div class="text-4xl mb-4">📋</div>
+                        <h3 class="text-xl font-semibold mb-4">政策動向注視</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            農業政策と補助金は市場動向に影響を与えます。国の農業政策を密接に注視することで、投資機会を把握できます。
+                        </p>
+                        <div class="bg-purple-100 dark:bg-purple-900/30 p-3 rounded-lg">
+                            <span class="text-sm font-medium text-purple-800 dark:text-purple-200">市場分析</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 5: 結語 -->
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-gradient">
+                    5. 結語
+                </h2>
+                <div class="max-w-4xl mx-auto">
+                    <p class="text-lg md:text-xl leading-relaxed text-gray-600 dark:text-gray-300 mb-8">
+                        農業への投資は、今日の食料不足問題を解決するためだけでなく、未来の持続可能な発展への道筋を築くものです。科学技術の進歩と市場需要の変化により、農業と株式市場の結合は継続的に新たな機会を創出していきます。
+                    </p>
+                    <p class="text-xl md:text-2xl font-semibold mb-8">
+                        このトレンドを掴み、投資家はこの可能性に満ちた分野で豊かなリターンを収穫することができるでしょう。
+                    </p>
+                    <div class="gradient-bg text-white p-8 rounded-2xl">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-4">
+                            農業の未来に共に期待し、富の種を蒔きましょう！
+                        </h3>
+                        <button class="bg-white text-green-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors mt-4">
+                            今すぐ始める
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 dark:bg-gray-800 py-12 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+                ※ 投資にはリスクが伴います。投資判断は自己責任で行ってください。
+            </p>
+            <p class="text-sm text-gray-500 dark:text-gray-400">
+                © 2024 農業投資ガイド. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Dark mode detection and toggle
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+
+        // Smooth scroll animation for buttons
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', function() {
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 150);
+            });
+        });
+    </script>
 </body>
 </html>
